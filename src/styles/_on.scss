@@ -1,0 +1,35 @@
+@use 'variaveis';
+
+.on {
+    border-top: 10px solid gold;
+    &__title {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    &__content {
+        display: block;
+
+        &__description {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__tabs {
+            padding-top: 20px;
+            margin-left: 140px;
+            margin-right: 140px;
+            display: flex;
+            justify-content: space-between;
+
+            &__buttons {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

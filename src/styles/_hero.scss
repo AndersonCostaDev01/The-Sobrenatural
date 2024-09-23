@@ -1,0 +1,93 @@
+@use 'variaveis';
+
+.hero {
+    &__container {
+        height: 100vh;
+        background:
+            linear-gradient(to bottom, rgba(238, 138, 7, 0.7), rgba(71, 55, 0, 0.7)),
+            /* Degradê */
+            url(../images/istockphoto-171349161-612x612.jpg);
+        /* Imagem de fundo */
+        background-size: cover;
+        /* Ajusta a imagem para cobrir todo o contêiner */
+        background-position: center;
+        /* Centraliza a imagem */
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7vh 50px;
+
+        &__text {
+            display: flex;
+            /* Adicionado para alinhar itens corretamente */
+            justify-content: center;
+            align-items: center;
+
+            &__logo {
+                width: 90px;
+                align-items: center;
+                justify-content: center;
+                padding: 60px 0 0 0;
+            }
+
+            &__buttons {
+
+                display: flex;
+                /* Alinha os botões em linha */
+                gap: 10px;
+                /* Espaçamento entre os botões */
+                margin-top: 20px;
+
+                /* Espaçamento acima dos botões */
+                &__button {
+                    padding: 10px 20px;
+                    /* Estilo do botão */
+                    border: none;
+                    /* Remove bordas padrão */
+                    border-radius: 5px;
+                    /* Arredonda os cantos */
+                    background-color: #f39c12;
+                    /* Cor de fundo */
+                    color: white;
+                    /* Cor do texto */
+                    cursor: pointer;
+                    /* Muda o cursor para indicar interatividade */
+                }
+            }
+        }
+
+        &__image {
+            width: 70vh;
+            /* Largura preferencial */
+            max-width: 100%;
+            /* Impede que a imagem exceda o contêiner */
+            height: auto;
+            /* Mantém a proporção */
+            border: 4px solid gold;
+            border-radius: 15px;
+            box-shadow: 25px 15px 15px variaveis.$corShadow;
+
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        margin-left: 90px;
+
+        &__button {
+            margin-left: 100px;
+        }
+    }
+}
+
+.text--hero {
+    font-family: Sobrenatural, sans-serif;
+    color: variaveis.$corLaranjaHero;
+    /* Usando variável para a cor */
+    font-weight: bolder;
+    font-size: 90px;
+    /* Tamanho do texto */
+}
