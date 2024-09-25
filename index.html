@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Supernatural</title>
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
+
 <body>
-    <header></header>
+    <header>
+
+    </header>
     <section class="hero">
         <div class="hero__container">
             <div class="hero__content">
@@ -17,46 +21,216 @@
                     </span>
                     <img class="hero__content__text__logo" src="./dist/images/Logo.png" alt="Sobrenatural">
                 </div>
-                
+
                 <img class="hero__content__image" src="./dist/images/hero_sobrenatural.jpg" alt="Sobrenatural">
             </div>
             <div class="hero__buttons">
-                <a href="#" class="hero__buttons__button button">
+                <a href="https://www.primevideo.com/dp/amzn1.dv.gti.20bb1813-379c-fc88-ed82-3755f16be7d2?autoplay=0&ref_=atv_cf_strg_wb" class="hero__buttons__button button">
                     Assista agora
                 </a>
-                <a href="#" class="hero__buttons__button button">
-                    Saiba mais 
+                <a href="#saiba" class="hero__buttons__button button">
+                    Saiba mais
                 </a>
             </div>
         </div>
     </section>
-    <section class="on">
+    <section class="on" id="saiba">
         <div class="container">
             <h2 class="on__title title--big">
                 Sobre a serie
             </h2>
-            <div class="on__content">
-                <p class="on__content__description text--big">
-                    "Supernatural" (ou "Sobrenatural", no Brasil) é uma série de televisão americana que estreou em 2005 e se tornou um fenômeno cultural ao longo de suas 15 temporadas, terminando em 2020. Criada por Eric Kripke, a série segue os irmãos Sam e Dean Winchester, interpretados por Jared Padalecki e Jensen Ackles, respectivamente.
+            <div class="on">
+                <p class="on__description text--big">
+                    "Supernatural" (ou "Sobrenatural", no Brasil) é uma série de televisão americana que estreou em 2005
+                    e se tornou um fenômeno cultural ao longo de suas 15 temporadas, terminando em 2020. Criada por Eric
+                    Kripke, a série segue os irmãos Sam e Dean Winchester, interpretados por Jared Padalecki e Jensen
+                    Ackles, respectivamente.
                 </p>
             </div>
-            <nav class="on__content__tabs">
-                <button class="on__content__tabs__buttons title">
-                    Enrredo
-                </button>
-                <button class="on__content__tabs__buttons title">
-                    Temas
-                </button>
-                <button class="on__content__tabs__buttons title">
-                    Etilo e impacto
-                </button>
-                <button class="on__content__tabs__buttons title">
-                    Legado
-                </button>
+            <nav class="on__tabs">
+                <div class="on__tabs__container">
+                    <button data-tab-button="enrredo" class="on__tabs__buttons on__tabs__buttons--active title">
+                        Enrredo
+                    </button>
+                    <button data-tab-button="temas" class="on__tabs__buttons title">
+                        Temas
+                    </button>
+                    <button data-tab-button="estilos" class="on__tabs__buttons title">
+                        Estilo e impacto
+                    </button>
+                    <button data-tab-button="legado" class="on__tabs__buttons title">
+                        Legado
+                    </button>
+                </div>
+                <div data-tab-id="enrredo" class="on__list on__list--active">
+                    <div class="on__list__text">
+                        <h3 class="title">
+                            Enrredo
+                        </h3>
+                        <p class="text">
+                            A trama gira em torno da busca dos irmãos para caçar criaturas sobrenaturais, como demônios,
+                            fantasmas, monstros e outras entidades mitológicas. Desde a infância, eles foram treinados
+                            por seu pai, John Winchester, para lutar contra essas ameaças, em grande parte devido à
+                            morte trágica de sua mãe, Mary, que foi assassinada por uma entidade sobrenatural.
+                        </p>
+                    </div>
+                    <img class="on__list__img" src="./dist/images/Enrredo.jpg" alt="irmãos Winchester">
+                </div>
+                <div data-tab-id="temas" class="on__list">
+                    <div class="on__list__text">
+                        <h3 class="title">
+                            Temas
+                        </h3>
+                        <p class="text">
+                            Supernatural" explora temas como família, sacrifício, amor, amizade e a luta entre o bem e o
+                            mal. Ao longo das temporadas, a série se aprofunda em mitologias de várias culturas, além de
+                            trazer personagens icônicos, como Castiel, um anjo interpretado por Misha Collins, e
+                            Crowley, o Rei do Inferno, interpretado por Mark Sheppard.
+                        </p>
+                    </div>
+                    <img class="on__list__img" src="./dist/images/Temas.jpeg" alt="3 personagens da serie sobrenatural">
+                </div>
+                <div data-tab-id="estilos" class="on__list">
+                    <div class="on__list__text">
+                        <h3 class="title">
+                            Estilo e Impacto
+                        </h3>
+                        <p class="text">
+                            A série combina elementos de terror, drama e comédia, criando um tom único que conquistou
+                            uma base de fãs leal. Além de sua narrativa envolvente, "Supernatural" é conhecida por seu
+                            uso inteligente de referências à cultura pop e à mitologia.
+                        </p>
+                    </div>
+                    <img class="on__list__img" src="./dist/images/estilo.jpg" alt="">
+                </div>
+                <div data-tab-id="legado" class="on__list">
+                    <div class="on__list__text">
+                        <h3 class="title">
+                            Legado
+                        </h3>
+                        <p class="text">
+                            "Supernatural" não só se tornou uma das séries de longa duração mais amadas da televisão,
+                            mas também gerou uma série de produtos derivados, como quadrinhos, livros e uma série
+                            prequel chamada "The Winchesters". O impacto cultural da série é visível em convenções,
+                            fanfics e comunidades online dedicadas aos personagens e à história. <br>
+                            A série deixou um legado duradouro e continua a ser uma referência no gênero de fantasia e
+                            horror na TV. Se você estiver interessado em algum aspecto específico da série, é só avisar!
+                        </p>
+                    </div>
+                    <img class="on__list__img" src="./dist/images/legado.png" alt="">
+                </div>
             </nav>
         </div>
     </section>
+    <section class="characters">
+        <div class="container">
+            <div class="characters__text">
+                <h2 class="title">
+                    Principais personagens 
+                </h2>
+                <p class="text">
+                    A seguir os personagens com maior relevancia e desenvolvimento dentro da serie durante as 15 Temporadas
+                </p>
+            </div>
+            <ul class="characters__list">
+                <li class="characters__list__item">
+                    <img src="./dist/images/SamWincheste.png" alt="Sam Winchester">
+                    <p class="text--big">
+                        Sam Winchester 
+                    </p>
+                </li>
+                <li class="characters__list__item">
+                    <img src="./dist/images/Dean Winchester.png" alt="Dean Winchester">
+                    <p class="text--big">
+                        Dean Winchester
+                    </p>
+                </li>
+                <li class="characters__list__item">
+                    <img src="./dist/images/Castiel.png" alt="Castiel">
+                    <p class="text--big">
+                        Castiel
+                    </p>
+                </li>
+                <li class="characters__list__item">
+                    <img src="./dist/images/Bobby Singer.png" alt="Bobby Singer">
+                    <p class="text--big">
+                        Bobby Singer
+                    </p>
+                </li>
+                <li class="characters__list__item">
+                    <img src="./dist/images/Crowley.png" alt="Crowley">
+                    <p class="text--big">
+                        Crowley
+                    </p>
+                </li>
+                <li class="characters__list__item">
+                    <img src="./dist/images/Jack Kline.png" alt="Jack Kline">
+                    <p class="text--big">
+                        Jack Kline
+                    </p>
+                </li>
+                <li class="characters__list__item">
+                    <img src="./dist/images/Chuck (god).png" alt="Chuck (god)">
+                    <p class="text--big">
+                        Chuck (god)
+                    </p>
+                </li>
+                <li class="characters__list__item">
+                    <img src="./dist/images/Rowena.png" alt="Rowena">
+                    <p class="text--big">
+                        Rowena McLeod
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container"></div>
+            <img class="footer__logo" src="./dist/images/logo.png" alt="Sobrenatural">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="lenguage-selector">
+                        <img src="./dist/images/globe.svg" alt="Globo do mundo">
+                    <select>
+                        <option>English</option>
+                        <option selected>Portugues</option>
+                    </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Termos de condições de uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Politica de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Proteção de dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Dispositivos compativeis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                © Todos os direitos reservados ate 2099
+            </p>
+            <p class="text--small">
+                Pagina feita por aluno do curso Full Stack Python. Pagina inspirada na serie Sobrenatural, criada por Eric Kripke e produzida pela Warner Bros. Television
+            </p>
+        </div>
+        </div>
+    </footer>
 
     <script src="./dist/js/main.js"></script>
 </body>
+
 </html>

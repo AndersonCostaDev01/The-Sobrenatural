@@ -12,6 +12,8 @@
         /* Ajusta a imagem para cobrir todo o contêiner */
         background-position: center;
         /* Centraliza a imagem */
+
+        border-bottom: 5px solid gold;
     }
 
     &__content {
@@ -19,6 +21,14 @@
         justify-content: space-between;
         align-items: center;
         padding: 7vh 50px;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        @media (max-width:1400px) and (min-width: 769px) {
+            display: block;
+        }
 
         &__text {
             display: flex;
@@ -30,7 +40,13 @@
                 width: 90px;
                 align-items: center;
                 justify-content: center;
-                padding: 60px 0 0 0;
+                padding-top: 60px;
+
+                @media (max-width: 768px) {
+                    width: 60px;
+                    padding-top: 30px;
+
+                }
             }
 
             &__buttons {
@@ -70,6 +86,11 @@
             border-radius: 15px;
             box-shadow: 25px 15px 15px variaveis.$corShadow;
 
+            @media (max-width: 1400px) and (min-width:769px) {
+                width: 50vw;
+                margin-left: 180px;
+                margin-right: 180px;
+            }
         }
     }
 
@@ -77,8 +98,21 @@
         display: flex;
         margin-left: 90px;
 
+        @media (max-width: 768px) {
+            margin-left: 60px;
+
+        }
+
+        @media (max-width: 1400px) and (min-width:769px) {
+            margin-left: 155px;
+        }
+
         &__button {
             margin-left: 100px;
+
+            @media (max-width: 768px) {
+                margin-left: 10px;
+            }
         }
     }
 }
@@ -90,4 +124,8 @@
     font-weight: bolder;
     font-size: 90px;
     /* Tamanho do texto */
+
+    @media (max-width: 768px) {
+        font-size: 40px;
+    }
 }

@@ -1,35 +1,108 @@
 @use 'variaveis';
 
 .on {
-    border-top: 10px solid gold;
+    display: block;
+
+
     &__title {
         display: flex;
         justify-content: center;
         padding-top: 30px;
     }
-    &__content {
-        display: block;
 
-        &__description {
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
+    &__description {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__tabs {
+        padding-top: 20px;
+        margin-left: 140px;
+        margin-right: 140px;
+
+        @media (max-width: 768px) {
+            margin: 0;
         }
 
-        &__tabs {
-            padding-top: 20px;
-            margin-left: 140px;
-            margin-right: 140px;
+        &__container {
             display: flex;
             justify-content: space-between;
 
-            &__buttons {
-                background-color: transparent;
-                border: none;
-                cursor: pointer;
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+
+        &__buttons {
+            background-color: transparent;
+            border: none;
+
+            @media (max-width: 768px) {
+                margin-bottom: 15px;
+            }
+
+            &:hover {
+                box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.7);
+                border-radius: 10px;
+                color: white;
+                transition: .5s;
+                
             }
         }
     }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+        display: none;
+
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 15px;
+            
+            p , h2 {
+                padding: 10px;
+            }
+        }
+
+        &__img {
+            width: 450px;
+            height: 300px;
+            max-width: 100%;
+            margin-left: 50px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px rgba(54, 47, 24, 0.7);
+
+            @media (max-width: 768px) {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.on__list--active {
+    display: grid;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.on__tabs__buttons--active {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.7);
+                border-radius: 10px;
+                color: white;
 }
